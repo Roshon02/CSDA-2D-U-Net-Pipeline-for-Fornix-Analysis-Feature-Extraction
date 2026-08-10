@@ -1,16 +1,6 @@
-"""
-Fornix 2D CSDA‑UNet Segmentation Pipeline
-==========================================
-UPDATES in this version:
-  • Mask cleaning pipeline applied at load time:
-      1. Remove small disconnected components (noise specks)
-      2. Fill internal holes (make solid piece)
-      3. Morphological closing (smooth jagged edges)
-  • TOGGLES ADDED:
-      - USE_CROP: Enable/disable center cropping
-      - IMG_SIZE: 256 or 512 (network adjusts automatically)
-      - Auto-start training (no ENTER required)
-"""
+
+
+
 
 import os, random, json, time, sys
 from pathlib import Path
